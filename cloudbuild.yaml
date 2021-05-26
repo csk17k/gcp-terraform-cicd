@@ -15,3 +15,5 @@ steps:
  - name: 'gcr.io/cloud-builders/docker'
    id: push image to container registry
    args: ["push", "gcr.io/$PROJECT_ID/tomcat"]
+
+
