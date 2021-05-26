@@ -15,8 +15,3 @@ steps:
  - name: 'gcr.io/cloud-builders/docker'
    id: push image to container registry
    args: ["push", "gcr.io/$PROJECT_ID/tomcat"]
-
-   - 'deploy.yaml'
-   env:
-   - 'CLOUDSDK_COMPUTE_ZONE=asia-east1-c'
-   - 'CLOUDSDK_CONTAINER_CLUSTER=gcpcluster'
