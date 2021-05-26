@@ -5,6 +5,7 @@ provider "google" {
   credentials = file("credentials.json")
 }
 
+# Create build and run
 resource "null_resource" "gcloud" {
   provisioner "local-exec" {
     command = "gcloud builds submit --config=cloudbuild.yaml"
