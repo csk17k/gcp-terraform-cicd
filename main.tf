@@ -19,7 +19,7 @@ resource "google_cloud_run_service" "mywebapp" {
   template {
     spec {
       containers {
-        image = "gcr.io/terraform-9999/tomcat"
+        image = "gcr.io/gcp-service-line-314413/tomcat"
       }
     }
   }
